@@ -1,62 +1,91 @@
-/* Elegant and Minimalist Styling */
+/* Cool Dark-Themed Blog Layout */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@300;400;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ece9e6, #ffffff);
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.container {
+header {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #222);
+    border-bottom: 3px solid #00ff99;
 }
 
 h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #222;
+    font-size: 36px;
+    color: #00ff99;
 }
 
 .subtitle {
     font-size: 18px;
-    font-weight: 300;
-    color: #555;
-    margin-bottom: 20px;
+    color: #bbb;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #00ff99;
+    box-shadow: 0px 4px 8px rgba(0, 255, 153, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+h2 a {
+    text-decoration: none;
+    color: #00ff99;
+    transition: 0.3s;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+.date {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 16px;
     line-height: 1.6;
-    color: #444;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #555;
 }
 
 footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    border-top: 3px solid #00ff99;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
