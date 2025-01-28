@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 20px 0;
+  color: #fff;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #1f8e89;
+}
+
+main {
+  padding: 40px 0;
+}
+
+h2 {
+  color: #1f8e89;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid #333;
+}
+
+.post {
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+}
+
+.post h3 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.post a {
+  text-decoration: none;
+  color: #1f8e89;
+}
+
+.post .meta {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.post .excerpt {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.read-more {
+  margin-top: 15px;
+  display: inline-block;
+  color: #1f8e89;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #fff;
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: #bbb;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.9em;
+}
